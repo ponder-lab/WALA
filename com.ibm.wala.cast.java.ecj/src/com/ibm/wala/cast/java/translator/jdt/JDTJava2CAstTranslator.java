@@ -42,7 +42,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
@@ -254,8 +253,7 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
 
     List<CAstEntity> declEntities = new ArrayList<>();
 
-    for (Iterator<CAstEntity> iter = cu.types().iterator(); iter.hasNext();) {
-      AbstractTypeDeclaration decl = (AbstractTypeDeclaration) iter.next();
+    for (AbstractTypeDeclaration decl : (Iterable<AbstractTypeDeclaration>) cu.types()) {
       // can be of type AnnotationTypeDeclaration, EnumDeclaration, TypeDeclaration
       declEntities.add(visit(decl, new RootContext()));
     }
@@ -427,13 +425,11 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
     ArrayList<ASTNode> staticInits = new ArrayList<>();
 
     if (enumConstants != null) {
-      for (Object decl : enumConstants) {
-        EnumConstantDeclaration ecd = (EnumConstantDeclaration) decl;
-        staticInits.add(ecd); // always (implicitly) static,final (actually, no modifiers allowed)
-      }
+      // always (implicitly) static,final (actually, no modifiers allowed)
+      staticInits.addAll(enumConstants);
     }
 
-    for (Object decl : bodyDecls) {
+    for (BodyDeclaration decl : bodyDecls) {
       if (decl instanceof Initializer) {
         Initializer initializer = (Initializer) decl;
         boolean isStatic = ((initializer.getModifiers() & Modifier.STATIC) != 0);
@@ -441,8 +437,7 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
       } else if (decl instanceof FieldDeclaration) {
         FieldDeclaration fd = (FieldDeclaration) decl;
 
-        for (Object f : fd.fragments()) {
-          VariableDeclarationFragment frag = (VariableDeclarationFragment) f;
+        for (VariableDeclarationFragment frag : (Iterable<VariableDeclarationFragment>) fd.fragments()) {
           if (frag.getInitializer() != null) {
             boolean isStatic = ((fd.getModifiers() & Modifier.STATIC) != 0);
             (isStatic ? staticInits : inits).add(frag);
@@ -453,18 +448,16 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
 
     // process entities. initializers will be folded in here.
     if (enumConstants != null) {
-      for (Object decl : enumConstants) {
-        memberEntities.add(visit((EnumConstantDeclaration) decl, context));
+      for (EnumConstantDeclaration decl : enumConstants) {
+        memberEntities.add(visit(decl, context));
       }
     }
 
-    for (Object d : bodyDecls) {
-      BodyDeclaration decl = (BodyDeclaration) d;
+    for (BodyDeclaration decl : bodyDecls) {
       if (decl instanceof FieldDeclaration) {
         FieldDeclaration fieldDecl = (FieldDeclaration) decl;
         Collection<CAstQualifier> quals = JDT2CAstUtils.mapModifiersToQualifiers(fieldDecl.getModifiers(), false, false);
-        for (Object f : fieldDecl.fragments()) {
-          VariableDeclarationFragment fieldFrag = (VariableDeclarationFragment) f;
+        for (VariableDeclarationFragment fieldFrag : (Iterable<VariableDeclarationFragment>) fieldDecl.fragments()) {
           IVariableBinding fieldBinding = fieldFrag.resolveBinding();
 		memberEntities.add(new FieldEntity(fieldFrag.getName().getIdentifier(), fieldBinding.getType(), quals,
               makePosition(fieldFrag.getStartPosition(), fieldFrag.getStartPosition() + fieldFrag.getLength()),
@@ -500,8 +493,7 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
     // add default constructor(s) if necessary
     // most default constructors have no parameters; however, those created by anonymous classes will have parameters
     // (they just call super with those parameters)
-    for (Object m : typeBinding.getDeclaredMethods()) {
-      IMethodBinding met = (IMethodBinding) m;
+    for (IMethodBinding met : typeBinding.getDeclaredMethods()) {
       if (met.isDefaultConstructor()) {
         if (typeBinding.isEnum())
           memberEntities.add(createEnumConstructorWithParameters(met, n, context, inits, null));
@@ -751,8 +743,7 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
 
     ArrayList<CAstNode> arguments = new ArrayList<>();
     int i = 0;
-    for (Object o : overriding.parameters()) {
-      SingleVariableDeclaration svd = (SingleVariableDeclaration) o;
+    for (SingleVariableDeclaration svd : (Iterable<SingleVariableDeclaration>) overriding.parameters()) {
       CAstNode varNode = makeNode(context, fFactory, null, CAstNode.VAR, fFactory.makeConstant(svd.getName().getIdentifier()));
       ITypeBinding fromType = JDT2CAstUtils.getErasedType(paramTypes[i], ast);
       ITypeBinding toType = JDT2CAstUtils.getErasedType(overridingBinding.getParameterTypes()[i], ast);
@@ -941,16 +932,16 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
 
         if (parameterTypes == null) {
           fParameterTypes = new ArrayList<>(fDecl.parameters().size());
-          for (Object p : fDecl.parameters()) {
-            fParameterNames[i++] = ((SingleVariableDeclaration) p).getName().getIdentifier();
-            fParameterTypes.add(fTypeDict.getCAstTypeFor(((SingleVariableDeclaration) p).resolveBinding().getType()));
+          for (SingleVariableDeclaration p : (Iterable<SingleVariableDeclaration>) fDecl.parameters()) {
+            fParameterNames[i++] = p.getName().getIdentifier();
+            fParameterTypes.add(fTypeDict.getCAstTypeFor(p.resolveBinding().getType()));
           }
         } else {
           // currently this is only used in making a default constructor with arguments (anonymous classes).
           // this is because we cannot synthesize bindings.
           fParameterTypes = parameterTypes;
-          for (Object p : fDecl.parameters()) {
-            fParameterNames[i++] = ((SingleVariableDeclaration) p).getName().getIdentifier();
+          for (SingleVariableDeclaration p : (Iterable<SingleVariableDeclaration>) fDecl.parameters()) {
+            fParameterNames[i++] = p.getName().getIdentifier();
           }
         }
       } else {
@@ -1044,7 +1035,6 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
         private Collection<CAstType> fExceptionTypes = null;
 
         @Override
-        @SuppressWarnings("deprecation")
         public CAstType getReturnType() {
           if (fReturnType != null)
             return fTypeDict.getCAstTypeFor(fReturnType);
@@ -1088,9 +1078,9 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
           if (fExceptionTypes == null) {
             fExceptionTypes = new LinkedHashSet<>();
             if (fDecl != null)
-              for (Object exception : fDecl.thrownExceptionTypes())
+              for (SimpleType exception : (Iterable<SimpleType>) fDecl.thrownExceptionTypes())
                 
-                fExceptionTypes.add(fTypeDict.getCAstTypeFor(((SimpleType) exception).resolveBinding()));
+                fExceptionTypes.add(fTypeDict.getCAstTypeFor(exception.resolveBinding()));
           }
           return fExceptionTypes;
         }
@@ -1264,8 +1254,8 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
    */
   private ArrayList<CAstNode> createBlock(Block n, WalkContext context) {
     ArrayList<CAstNode> stmtNodes = new ArrayList<>();
-    for (Object s : n.statements())
-      visitNodeOrNodes((ASTNode) s, context, stmtNodes);
+    for (ASTNode s : (Iterable<ASTNode>) n.statements())
+      visitNodeOrNodes(s, context, stmtNodes);
     return stmtNodes;
   }
 
@@ -1311,8 +1301,8 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
   private ArrayList<CAstNode> visit(VariableDeclarationStatement n, WalkContext context) {
     ArrayList<CAstNode> result = new ArrayList<>();
 
-    for (Object o : n.fragments())
-      result.add(visit((VariableDeclarationFragment) o, context));
+    for (VariableDeclarationFragment o : (Iterable<VariableDeclarationFragment>) n.fragments())
+      result.add(visit(o, context));
     return result;
   }
 
@@ -1325,11 +1315,11 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
 
     eltNodes[idx++] = makeNode(context, fFactory, n, CAstNode.NEW, fFactory.makeConstant(newTypeRef), fFactory.makeConstant(n
         .expressions().size()));
-    for (Iterator<CAstEntity> iter = n.expressions().iterator(); iter.hasNext(); idx++) {
-      Expression element = (Expression) iter.next();
+    for (Expression element : (Iterable<Expression>) n.expressions()) {
       eltNodes[idx] = visitNode(element, context);
       if (eltNodes[idx] == null)
         assert eltNodes[idx] != null : element.toString();
+      ++idx;
     }
 
     return makeNode(context, fFactory, n, CAstNode.ARRAY_LITERAL, eltNodes);
@@ -1412,8 +1402,7 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
     argNodes[idx++] = fFactory.makeConstant(callSiteRef);
 
     // rest of args
-    for (Iterator<?> iter = arguments.iterator(); iter.hasNext();) {
-      Object arg = iter.next();
+    for (Object arg : arguments) {
       argNodes[idx++] = (arg instanceof CAstNode) ? ((CAstNode) arg) : visitNode((Expression) arg, context);
     }
     callNode = makeNode(context, fFactory, nn, CAstNode.CALL, argNodes);
@@ -2022,8 +2011,7 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
       // keep on adding operands on the right side
 
       leftLength = n.getRightOperand().getStartPosition() + n.getRightOperand().getLength() - leftStartPosition;
-      for (Object o : n.extendedOperands()) {
-        Expression operand = (Expression) o;
+      for (Expression operand : (Iterable<Expression>) n.extendedOperands()) {
         result = createInfixExpression(n.getOperator(), leftType, leftStartPosition, leftLength, result, operand, context);
 
         if (leftType.isPrimitive() && operand.resolveTypeBinding().isPrimitive())
@@ -2390,8 +2378,7 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
     ArrayList<CAstNode> currentBlock = new ArrayList<>();
 
     // Now produce the CAst representation for each case
-    for (Object o : cases) {
-      Statement s = (Statement) o;
+    for (Statement s : cases) {
       if (s instanceof SwitchCase) {
         if (!currentBlock.isEmpty()) {
           // bundle up statements before this case
@@ -2637,8 +2624,8 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
     for (int i = 0; i < n.initializers().size(); i++) {
       ASTNode init = (ASTNode) n.initializers().get(i);
       if (init instanceof VariableDeclarationExpression) {
-        for (Object o : ((VariableDeclarationExpression) init).fragments())
-          inits.add(visitNode((ASTNode) o, context));
+        for (ASTNode o : (Iterable<ASTNode>) ((VariableDeclarationExpression) init).fragments())
+          inits.add(visitNode(o, context));
       } else
         inits.add(visitNode(init, context));
     }
@@ -3128,8 +3115,7 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
     TryCatchContext(WalkContext parent, TryStatement tryNode) {
       super(parent);
 
-      for (Iterator<CatchClause> catchIter = tryNode.catchClauses().iterator(); catchIter.hasNext();) {
-        CatchClause c = catchIter.next();
+      for (CatchClause c : (Iterable<CatchClause>) tryNode.catchClauses()) {
         Pair<ITypeBinding, Object> p = Pair.make(c.getException().resolveBinding().getType(), (Object) c);
 
         fCatchNodes.add(p);
@@ -3477,12 +3463,7 @@ public abstract class JDTJava2CAstTranslator<T extends Position> {
         constants.add(var);
 
     // constants are unsorted by default
-    Collections.sort(constants, new Comparator<IVariableBinding>() {
-      @Override
-      public int compare(IVariableBinding arg0, IVariableBinding arg1) {
-        return arg0.getVariableId() - arg1.getVariableId();
-      }
-    });
+    Collections.sort(constants, (arg0, arg1) -> arg0.getVariableId() - arg1.getVariableId());
 
     // PART II: create values()
     memberEntities.add(createEnumValuesMethod(typeBinding, constants, context));

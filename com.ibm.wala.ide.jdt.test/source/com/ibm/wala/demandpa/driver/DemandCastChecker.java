@@ -43,9 +43,9 @@ package com.ibm.wala.demandpa.driver;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
+import java.util.function.Predicate;
 
 import com.ibm.wala.core.tests.callGraph.CallGraphTestUtil;
 import com.ibm.wala.core.tests.util.TestConstants;
@@ -88,7 +88,6 @@ import com.ibm.wala.types.ClassLoaderReference;
 import com.ibm.wala.types.TypeReference;
 import com.ibm.wala.util.CancelException;
 import com.ibm.wala.util.NullProgressMonitor;
-import com.ibm.wala.util.Predicate;
 import com.ibm.wala.util.ProgressMaster;
 import com.ibm.wala.util.WalaException;
 import com.ibm.wala.util.collections.Pair;
@@ -227,8 +226,7 @@ public class DemandCastChecker {
     List<Pair<CGNode, SSACheckCastInstruction>> failing = new ArrayList<>();
 
     int numSafe = 0, numMightFail = 0;
-    outer: for (Iterator<? extends CGNode> nodeIter = cg.iterator(); nodeIter.hasNext();) {
-      CGNode node = nodeIter.next();
+    outer: for (CGNode node : cg) {
       TypeReference declaringClass = node.getMethod().getReference().getDeclaringClass();
       // skip library classes
       if (declaringClass.getClassLoader().equals(ClassLoaderReference.Primordial)) {
@@ -258,19 +256,14 @@ public class DemandCastChecker {
           
           System.err.println("CHECKING " + castInstr + " in " + node.getMethod());
           PointerKey castedPk = heapModel.getPointerKeyForLocal(node, castInstr.getUse(0));
-          Predicate<InstanceKey> castPred = new Predicate<InstanceKey>() {
-
-            @Override
-            public boolean test(InstanceKey ik) {
-              TypeReference ikTypeRef = ik.getConcreteType().getReference();
-              for (TypeReference t : declaredResultTypes) {
-                if (cha.isAssignableFrom(cha.lookupClass(t), cha.lookupClass(ikTypeRef))) {
-                  return true;
-                }
+          Predicate<InstanceKey> castPred = ik -> {
+            TypeReference ikTypeRef = ik.getConcreteType().getReference();
+            for (TypeReference t : declaredResultTypes) {
+              if (cha.isAssignableFrom(cha.lookupClass(t), cha.lookupClass(ikTypeRef))) {
+                return true;
               }
-              return false;
             }
-
+            return false;
           };
           long startTime = System.currentTimeMillis();
           Pair<PointsToResult, Collection<InstanceKey>> queryResult = dmp.getPointsTo(castedPk, castPred);

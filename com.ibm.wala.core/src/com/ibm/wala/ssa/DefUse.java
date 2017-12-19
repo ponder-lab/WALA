@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import com.ibm.wala.util.collections.EmptyIterator;
+import com.ibm.wala.util.collections.Iterator2Iterable;
 import com.ibm.wala.util.debug.Assertions;
 import com.ibm.wala.util.intset.IntIterator;
 import com.ibm.wala.util.intset.IntSet;
@@ -39,7 +40,7 @@ public class DefUse {
   /**
    * A Mapping from integer -> Instruction
    */
-  final protected ArrayList<SSAInstruction> allInstructions = new ArrayList<SSAInstruction>();
+  final protected ArrayList<SSAInstruction> allInstructions = new ArrayList<>();
 
   /**
    * prevent the IR from being collected while this is live.
@@ -63,9 +64,9 @@ public class DefUse {
     if (DEBUG) {
       System.err.println(("DefUse: defs.length " + defs.length));
     }
-    Iterator it = allInstructions.iterator();
+    Iterator<SSAInstruction> it = allInstructions.iterator();
     for (int i = 0; i < allInstructions.size(); i++) {
-      SSAInstruction s = (SSAInstruction) it.next();
+      SSAInstruction s = it.next();
       if (s == null) {
         continue;
       }
@@ -99,8 +100,8 @@ public class DefUse {
    * Initialize the allInstructions field with every {@link SSAInstruction} in the ir.
    */
   protected void initAllInstructions() {
-    for (Iterator<SSAInstruction> it = ir.iterateAllInstructions(); it.hasNext();) {
-      allInstructions.add(it.next());
+    for (SSAInstruction inst : Iterator2Iterable.make(ir.iterateAllInstructions())) {
+      allInstructions.add(inst);
     }
   }
 

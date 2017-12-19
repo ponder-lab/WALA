@@ -20,6 +20,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Function;
 
 import com.ibm.wala.classLoader.ArrayClass;
 import com.ibm.wala.classLoader.ClassLoaderFactory;
@@ -39,11 +40,11 @@ import com.ibm.wala.util.MonitorUtil.IProgressMonitor;
 import com.ibm.wala.util.collections.HashMapFactory;
 import com.ibm.wala.util.collections.HashSetFactory;
 import com.ibm.wala.util.collections.Iterator2Collection;
+import com.ibm.wala.util.collections.Iterator2Iterable;
 import com.ibm.wala.util.collections.MapIterator;
 import com.ibm.wala.util.collections.MapUtil;
 import com.ibm.wala.util.debug.Assertions;
 import com.ibm.wala.util.debug.UnimplementedError;
-import com.ibm.wala.util.functions.Function;
 import com.ibm.wala.util.ref.CacheReference;
 import com.ibm.wala.util.ref.ReferenceCleanser;
 import com.ibm.wala.util.strings.Atom;
@@ -273,13 +274,12 @@ public class ClassHierarchy implements IClassHierarchy {
       System.err.println(("Add all classes from loader " + loader));
     }
     Collection<IClass> toRemove = HashSetFactory.make();
-    for (Iterator<IClass> it = loader.iterateAllClasses(); it.hasNext();) {
+    for (IClass klass : Iterator2Iterable.make(loader.iterateAllClasses())) {
       if (progressMonitor != null) {
         if (progressMonitor.isCanceled()) {
           throw new CancelCHAConstructionException();
         }
       }
-      IClass klass = it.next();
       boolean added = addClass(klass);
       if (!added) {
         toRemove.add(klass);
@@ -307,7 +307,7 @@ public class ClassHierarchy implements IClassHierarchy {
       System.err.println(("Attempt to add class " + klass));
     }
     Set<IClass> loadedSuperclasses;
-    Collection loadedSuperInterfaces;
+    Collection<IClass> loadedSuperInterfaces;
     try {
       loadedSuperclasses = computeSuperclasses(klass);
       loadedSuperInterfaces = klass.getAllImplementedInterfaces();
@@ -352,8 +352,7 @@ public class ClassHierarchy implements IClassHierarchy {
     }
 
     if (loadedSuperInterfaces != null) {
-      for (Iterator it3 = loadedSuperInterfaces.iterator(); it3.hasNext();) {
-        final IClass iface = (IClass) it3.next();
+      for (IClass iface : loadedSuperInterfaces) {
         try {
           // make sure we'll be able to load the interface!
           computeSuperclasses(iface);
@@ -454,13 +453,12 @@ public class ClassHierarchy implements IClassHierarchy {
     }
     if (declaredClass.isInterface()) {
       HashSet<IMethod> result = HashSetFactory.make(3);
-      Set impls = implementors.get(declaredClass);
+      Set<IClass> impls = implementors.get(declaredClass);
       if (impls == null) {
         // give up and return no receivers
         return Collections.emptySet();
       }
-      for (Iterator it = impls.iterator(); it.hasNext();) {
-        IClass klass = (IClass) it.next();
+      for (IClass klass : impls) {
         if (!klass.isInterface() && !klass.isAbstract()) {
           result.addAll(computeTargetsNotInterface(ref, klass));
         }
@@ -608,9 +606,7 @@ public class ClassHierarchy implements IClassHierarchy {
    */
   private Set<IMethod> computeOverriders(Node node, Selector selector) {
     HashSet<IMethod> result = HashSetFactory.make(3);
-    for (Iterator<Node> it = node.getChildren(); it.hasNext();) {
-
-      Node child = it.next();
+    for (Node child : Iterator2Iterable.make(node.getChildren())) {
       IMethod m = findMethod(child.getJavaClass(), selector);
       if (m != null) {
         result.add(m);
@@ -642,8 +638,7 @@ public class ClassHierarchy implements IClassHierarchy {
 
   private void recursiveStringify(Node n, StringBuffer buffer) {
     buffer.append(n.toString()).append("\n");
-    for (Iterator<Node> it = n.getChildren(); it.hasNext();) {
-      Node child = it.next();
+    for (Node child : Iterator2Iterable.make(n.getChildren())) {
       recursiveStringify(child, buffer);
     }
   }
@@ -663,8 +658,7 @@ public class ClassHierarchy implements IClassHierarchy {
 
   private void visitForNumbering(Node N) {
     N.left = nextNumber++;
-    for (Iterator<Node> it = N.children.iterator(); it.hasNext();) {
-      Node C = it.next();
+    for (Node C : N.children) {
       visitForNumbering(C);
     }
     N.right = nextNumber++;
@@ -1014,8 +1008,7 @@ public class ClassHierarchy implements IClassHierarchy {
     if (subTypeRefsOfError == null) {
       computeSubClasses(TypeReference.JavaLangError);
       subTypeRefsOfError = HashSetFactory.make(subclassesOfError.size());
-      for (Iterator it = subclassesOfError.iterator(); it.hasNext();) {
-        IClass klass = (IClass) it.next();
+      for (IClass klass : subclassesOfError) {
         subTypeRefsOfError.add(klass.getReference());
       }
     }
@@ -1032,8 +1025,7 @@ public class ClassHierarchy implements IClassHierarchy {
     if (runtimeExceptionTypeRefs == null) {
       computeSubClasses(TypeReference.JavaLangRuntimeException);
       runtimeExceptionTypeRefs = HashSetFactory.make(runtimeExceptionClasses.size());
-      for (Iterator it = runtimeExceptionClasses.iterator(); it.hasNext();) {
-        IClass klass = (IClass) it.next();
+      for (IClass klass : runtimeExceptionClasses) {
         runtimeExceptionTypeRefs.add(klass.getReference());
       }
     }
@@ -1053,8 +1045,7 @@ public class ClassHierarchy implements IClassHierarchy {
     assert node != null : "null node for class " + T;
     HashSet<IClass> result = HashSetFactory.make(3);
     result.add(T);
-    for (Iterator<Node> it = node.getChildren(); it.hasNext();) {
-      Node child = it.next();
+    for (Node child : Iterator2Iterable.make(node.getChildren())) {
       result.addAll(computeSubClasses(child.klass.getReference()));
     }
     return result;
@@ -1085,13 +1076,8 @@ public class ClassHierarchy implements IClassHierarchy {
 
   @Override
   public Iterator<IClass> iterator() {
-    Function<Node, IClass> toClass = new Function<Node, IClass>() {
-      @Override
-      public IClass apply(Node n) {
-        return n.klass;
-      }
-    };
-    return new MapIterator<Node, IClass>(map.values().iterator(), toClass);
+    Function<Node, IClass> toClass = n -> n.klass;
+    return new MapIterator<>(map.values().iterator(), toClass);
   }
 
   /**
@@ -1109,9 +1095,9 @@ public class ClassHierarchy implements IClassHierarchy {
 
   @Override
   public IClassLoader getLoader(ClassLoaderReference loaderRef) {
-    for (int i = 0; i < loaders.length; i++) {
-      if (loaders[i].getReference().equals(loaderRef)) {
-        return loaders[i];
+    for (IClassLoader loader : loaders) {
+      if (loader.getReference().equals(loaderRef)) {
+        return loader;
       }
     }
     Assertions.UNREACHABLE();
@@ -1147,13 +1133,8 @@ public class ClassHierarchy implements IClassHierarchy {
     if (klass.isArrayClass()) {
       return getImmediateArraySubclasses((ArrayClass)klass);
     }
-    Function<Node, IClass> node2Class = new Function<Node, IClass>() {
-      @Override
-      public IClass apply(Node n) {
-        return n.klass;
-      }
-    };
-    return Iterator2Collection.toSet(new MapIterator<Node, IClass>(findNode(klass).children.iterator(), node2Class));
+    Function<Node, IClass> node2Class = n -> n.klass;
+    return Iterator2Collection.toSet(new MapIterator<>(findNode(klass).children.iterator(), node2Class));
   }
 
   private Collection<IClass> getImmediateArraySubclasses(ArrayClass klass) {

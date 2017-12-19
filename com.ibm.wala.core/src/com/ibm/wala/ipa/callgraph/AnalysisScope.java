@@ -39,7 +39,6 @@ import com.ibm.wala.types.Descriptor;
 import com.ibm.wala.types.MethodReference;
 import com.ibm.wala.types.TypeName;
 import com.ibm.wala.types.TypeReference;
-import com.ibm.wala.util.Predicate;
 import com.ibm.wala.util.collections.FilterIterator;
 import com.ibm.wala.util.collections.HashMapFactory;
 import com.ibm.wala.util.collections.HashSetFactory;
@@ -47,7 +46,6 @@ import com.ibm.wala.util.collections.MapIterator;
 import com.ibm.wala.util.collections.MapUtil;
 import com.ibm.wala.util.config.SetOfClasses;
 import com.ibm.wala.util.debug.Assertions;
-import com.ibm.wala.util.functions.Function;
 import com.ibm.wala.util.io.RtJar;
 import com.ibm.wala.util.strings.Atom;
 import com.ibm.wala.util.strings.ImmutableByteArray;
@@ -120,7 +118,7 @@ public class AnalysisScope {
    */
   private SetOfClasses exclusions;
 
-  final protected LinkedHashMap<Atom, ClassLoaderReference> loadersByName = new LinkedHashMap<Atom, ClassLoaderReference>();
+  final protected LinkedHashMap<Atom, ClassLoaderReference> loadersByName = new LinkedHashMap<>();
 
   /**
    * Special class loader for array instances
@@ -133,7 +131,7 @@ public class AnalysisScope {
 
   protected AnalysisScope(Collection<? extends Language> languages) {
     super();
-    this.languages = new HashMap<Atom, Language>();
+    this.languages = new HashMap<>();
     for (Language l : languages) {
       this.languages.put(l.getName(), l);
     }
@@ -379,16 +377,7 @@ public class AnalysisScope {
   private JarFile getRtJar() {
     return RtJar.getRtJar(
         new MapIterator<Module,JarFile>(
-            new FilterIterator<Module>(getModules(getPrimordialLoader()).iterator(), new Predicate<Module>() {
-              @Override
-              public boolean test(Module M) {
-                return M instanceof JarFileModule;
-              } }), new Function<Module,JarFile>() {
-
-              @Override
-              public JarFile apply(Module M) {
-                return ((JarFileModule) M).getJarFile();
-              } }));
+            new FilterIterator<>(getModules(getPrimordialLoader()).iterator(), JarFileModule.class::isInstance), M -> ((JarFileModule) M).getJarFile()));
   }
 
   public String getJavaLibraryVersion() throws IllegalStateException {
@@ -445,7 +434,7 @@ public class AnalysisScope {
     // Note: 'arrayClassLoader' object will be built from scratch in remote process
 
     // represent modules map as a set of strings (corresponding to analysis scope file lines.
-    List<String> moduleLines = new ArrayList<String>();
+    List<String> moduleLines = new ArrayList<>();
     for (Map.Entry<ClassLoaderReference, List<Module>> e : moduleMap.entrySet()) {
       ClassLoaderReference lrReference = e.getKey();
       String moduleLdr = lrReference.getName().toString();
@@ -478,7 +467,7 @@ public class AnalysisScope {
     }
 
     // represent loaderImplByRef map as set of strings
-    List<String> ldrImplLines = new ArrayList<String>();
+    List<String> ldrImplLines = new ArrayList<>();
     for (Map.Entry<ClassLoaderReference, String> e : loaderImplByRef.entrySet()) {
       ClassLoaderReference lrReference = e.getKey();
       String ldrName = lrReference.getName().toString();

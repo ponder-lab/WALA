@@ -15,6 +15,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.function.IntFunction;
 
 import com.ibm.wala.cfg.ControlFlowGraph;
 import com.ibm.wala.classLoader.CallSiteReference;
@@ -32,14 +33,12 @@ import com.ibm.wala.ssa.IR;
 import com.ibm.wala.ssa.ISSABasicBlock;
 import com.ibm.wala.ssa.SSAInstruction;
 import com.ibm.wala.util.CancelException;
-import com.ibm.wala.util.Predicate;
 import com.ibm.wala.util.collections.EmptyIterator;
 import com.ibm.wala.util.collections.FilterIterator;
 import com.ibm.wala.util.collections.HashSetFactory;
 import com.ibm.wala.util.collections.IntMapIterator;
 import com.ibm.wala.util.collections.SparseVector;
 import com.ibm.wala.util.debug.Assertions;
-import com.ibm.wala.util.functions.IntFunction;
 import com.ibm.wala.util.graph.NumberedEdgeManager;
 import com.ibm.wala.util.intset.BasicNaturalRelation;
 import com.ibm.wala.util.intset.IBinaryNaturalRelation;
@@ -138,12 +137,12 @@ public class ExplicitCallGraph extends BasicCallGraph<SSAContextInterpreter> imp
      * A Mapping from call site program counter (int) -> Object, where Object is a CGNode if we've discovered exactly one target for
      * the site, or an IntSet of node numbers if we've discovered more than one target for the site.
      */
-    protected final SparseVector<Object> targets = new SparseVector<Object>();
+    protected final SparseVector<Object> targets = new SparseVector<>();
 
     private final MutableSharedBitVectorIntSet allTargets = new MutableSharedBitVectorIntSet();
     
-    private WeakReference<IR> ir = new WeakReference<IR>(null);
-    private WeakReference<DefUse> du = new WeakReference<DefUse>(null);
+    private WeakReference<IR> ir = new WeakReference<>(null);
+    private WeakReference<DefUse> du = new WeakReference<>(null);
 
     /**
      * @param method
@@ -187,11 +186,9 @@ public class ExplicitCallGraph extends BasicCallGraph<SSAContextInterpreter> imp
      */
     protected Iterator<CallSiteReference> getPossibleSites(final CGNode to) {
       final int n = getCallGraph().getNumber(to);
-      return new FilterIterator<CallSiteReference>(iterateCallSites(), new Predicate() {
-        @Override public boolean test(Object o) {
-          IntSet s = getPossibleTargetNumbers((CallSiteReference) o);
-          return s == null ? false : s.contains(n);
-        }
+      return new FilterIterator<>(iterateCallSites(), o -> {
+        IntSet s = getPossibleTargetNumbers(o);
+        return s == null ? false : s.contains(n);
       });
     }
 
@@ -307,7 +304,7 @@ public class ExplicitCallGraph extends BasicCallGraph<SSAContextInterpreter> imp
       IR ir = this.ir.get();
       if (ir == null) {
         ir = getCallGraph().getInterpreter(this).getIR(this);
-        this.ir = new WeakReference<IR>(ir);
+        this.ir = new WeakReference<>(ir);
       }
       return ir;
     }
@@ -322,7 +319,7 @@ public class ExplicitCallGraph extends BasicCallGraph<SSAContextInterpreter> imp
       DefUse du = this.du.get();
       if (du == null) {
         du = getCallGraph().getInterpreter(this).getDU(this);
-        this.du = new WeakReference<DefUse>(du);
+        this.du = new WeakReference<>(du);
       }
       return du;
     }
@@ -356,15 +353,12 @@ public class ExplicitCallGraph extends BasicCallGraph<SSAContextInterpreter> imp
 
   protected class ExplicitEdgeManager implements NumberedEdgeManager<CGNode> {
 
-    final IntFunction<CGNode> toNode = new IntFunction<CGNode>() {
-      @Override
-      public CGNode apply(int i) {
-        CGNode result = getNode(i);
-        // if (Assertions.verifyAssertions && result == null) {
-        // Assertions.UNREACHABLE("uh oh " + i);
-        // }
-        return result;
-      }
+    final IntFunction<CGNode> toNode = i -> {
+      CGNode result = getNode(i);
+      // if (Assertions.verifyAssertions && result == null) {
+      // Assertions.UNREACHABLE("uh oh " + i);
+      // }
+      return result;
     };
 
     /**
@@ -392,7 +386,7 @@ public class ExplicitCallGraph extends BasicCallGraph<SSAContextInterpreter> imp
       if (s == null) {
         return EmptyIterator.instance();
       } else {
-        return new IntMapIterator<CGNode>(s.intIterator(), toNode);
+        return new IntMapIterator<>(s.intIterator(), toNode);
       }
     }
 
@@ -406,7 +400,7 @@ public class ExplicitCallGraph extends BasicCallGraph<SSAContextInterpreter> imp
     @Override
     public Iterator<CGNode> getSuccNodes(CGNode N) {
       ExplicitNode n = (ExplicitNode) N;
-      return new IntMapIterator<CGNode>(n.getAllTargetNumbers().intIterator(), toNode);
+      return new IntMapIterator<>(n.getAllTargetNumbers().intIterator(), toNode);
     }
 
     @Override
