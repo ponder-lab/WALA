@@ -172,6 +172,7 @@ public final class Atom implements Serializable {
 
   public final boolean startsWith(Atom start) {
       assert (start != null);
+      assert val.length == start.val.length;
 
       for (int i = 0; i < start.val.length; ++i) {
           if (val[i] != start.val[i])
