@@ -1,8 +1,14 @@
 language: android
 jdk: oraclejdk8
+sudo: required
+dist: trusty
+addons:
+    apt:
+        packages:
+            - xvfb
 before_install:
  - "export DISPLAY=:99.0"
- - "sh -e /etc/init.d/xvfb start"
+ # - "sh -e /etc/init.d/xvfb start"
  - "pushd /tmp"
  - "git clone --depth=1 https://github.com/secure-software-engineering/DroidBench.git"
  - "popd"
@@ -16,7 +22,9 @@ script:
  - ./build-maven-jars.py "install -Dgpg.skip"
 sudo: false
 cache:
-  directories:
-    - $HOME/.m2
-    - $TRAVIS_BUILD_DIR/com.ibm.wala.core.testdata/ocaml/ocamljava-2.0-alpha1/lib
-    
+  - apt
+  - directories:
+      - $HOME/.m2
+      - $TRAVIS_BUILD_DIR/com.ibm.wala.core.testdata/ocaml/ocamljava-2.0-alpha1/lib
+notifications:
+    slack: cunyponder:A8GuEoj0voEn2H7MJDL1eNji
