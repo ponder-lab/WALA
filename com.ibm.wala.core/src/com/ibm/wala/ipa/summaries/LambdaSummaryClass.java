@@ -270,8 +270,22 @@ public class LambdaSummaryClass extends SyntheticClass {
       default:
         throw new Error("unexpected dynamic invoke type " + kind);
       }
-           
-      int numParams = getClassHierarchy().resolveMethod(callee).getNumberOfParameters();
+
+      IClassHierarchy classHierarchy = getClassHierarchy();
+
+      if (classHierarchy == null)
+        System.err.println("Class hierarchy is null.");
+
+      IMethod method = classHierarchy.resolveMethod(callee);
+
+      int numParams = 0;
+
+      if (method == null) {
+        System.err.println("Callee method is null. Setting number of parameters to 1 since lambdas always have a single parameter.");
+        numParams = 1;
+      } else
+        numParams = method.getNumberOfParameters();
+
       int params[] = new int[ numParams ];
       for(int i = isNew? 1: 0; i < invoke.getNumberOfParameters(); i++) {
         params[i] = args + i + 1;
