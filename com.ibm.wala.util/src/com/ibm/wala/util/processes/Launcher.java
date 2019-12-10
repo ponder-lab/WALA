@@ -236,7 +236,7 @@ public abstract class Launcher {
             repeat = false;
             blockingDrain();
             if (logger != null) {
-              logger.fine("process terminated with exit code " + p.exitValue());
+              logger.warning("process terminated with exit code " + p.exitValue());
             }
           } catch (IllegalThreadStateException e) {
             // this means the process has not yet terminated.
