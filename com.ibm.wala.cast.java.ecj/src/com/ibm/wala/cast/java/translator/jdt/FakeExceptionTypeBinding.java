@@ -464,4 +464,8 @@ public class FakeExceptionTypeBinding implements ITypeBinding {
     return null;
   }
 
+  @Override
+  public boolean isRecord() {
+    return false;
+  }
 }
