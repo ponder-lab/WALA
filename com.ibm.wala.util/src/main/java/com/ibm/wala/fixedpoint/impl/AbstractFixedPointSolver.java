@@ -43,12 +43,11 @@ import org.jspecify.annotations.Nullable;
 public abstract class AbstractFixedPointSolver<T extends IVariable<T>>
     implements IFixedPointSolver<T>, FixedPointConstants, VerboseAction {
 
-  static final boolean DEBUG = false;
+  static final boolean DEBUG = true;
 
-  public static final boolean verbose =
-      "true".equals(System.getProperty("com.ibm.wala.fixedpoint.impl.verbose"));
+  public static final boolean verbose = true;
 
-  public static final int DEFAULT_VERBOSE_INTERVAL = 100000;
+  public static final int DEFAULT_VERBOSE_INTERVAL = 1;
 
   static final boolean MORE_VERBOSE = true;
 

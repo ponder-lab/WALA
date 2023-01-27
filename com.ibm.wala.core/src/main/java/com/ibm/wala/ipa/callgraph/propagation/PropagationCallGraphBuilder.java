@@ -58,7 +58,7 @@ import java.util.Set;
  * can consider recomputing local sets on demand.
  */
 public abstract class PropagationCallGraphBuilder implements CallGraphBuilder<InstanceKey> {
-  private static final boolean DEBUG_ALL = false;
+  private static final boolean DEBUG_ALL = true;
 
   static final boolean DEBUG_ASSIGN = DEBUG_ALL | false;
 

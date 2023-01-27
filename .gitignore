@@ -8,3 +8,5 @@
 /.gradle/
 /.vscode/settings.json
 build/
+build-logic
+.classpath
