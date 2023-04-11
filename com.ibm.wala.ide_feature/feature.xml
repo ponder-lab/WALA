@@ -3,7 +3,17 @@
       id="com.ibm.wala.ide_feature"
       label="%featureName"
       version="1.6.1.qualifier"
-      provider-name="%providerName">
+      provider-name="%providerName"
+      plugin="com.ibm.wala.ide">
+
+   <description url="https://github.com/ponder-lab/WALA/tree/v1.6">
+      T.J. Watson Libraries for Analysis
+   </description>
+
+   <url>
+      <update label="PONDER Lab WALA Update Site" url="https://raw.githubusercontent.com/ponder-lab/WALA/v1.6/com.ibm.wala-repository"/>
+      <discovery label="PONDER Lab WALA Update Site" url="https://raw.githubusercontent.com/ponder-lab/WALA/v1.6/com.ibm.wala-repository"/>
+   </url>
 
    <plugin
          id="com.ibm.wala.ide"
