@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/test" kind="src" path="src/test/java">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/"/>
+	<classpathentry kind="src" path="/com.ibm.wala.cast.js">
+		<attributes>
+			<attribute name="without_test_code" value="false"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/com.ibm.wala.cast">
+		<attributes>
+			<attribute name="without_test_code" value="false"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/com.ibm.wala.core">
+		<attributes>
+			<attribute name="without_test_code" value="false"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/com.ibm.wala.shrike">
+		<attributes>
+			<attribute name="without_test_code" value="false"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/com.ibm.wala.util">
+		<attributes>
+			<attribute name="without_test_code" value="false"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/com.ibm.wala.cast.js.rhino">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="without_test_code" value="false"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/nu.validator.htmlparser/htmlparser/1.4/7703abdb7fba3ed993330e5d3aac163268f69e15/htmlparser-1.4-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/nu.validator.htmlparser/htmlparser/1.4/70573d780fa08271499e201bbd86caa3c62f20e1/htmlparser-1.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/2ef0187124bbfc7aed3038d4ffdd2241e8992937/commons-io-2.11.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/a2503f302b11ebde7ebc3df41daebe0e4eea3689/commons-io-2.11.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10/6ed5748c6f0860e81e09d4d2582fe914cfa41d1e/gson-2.10-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10/dd9b193aef96e973d5a11ab13cd17430c2e4306b/gson-2.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.htmlparser.jericho/jericho-html/3.2/a60b9da47159d960b8af31d1fa36adf65b3bf069/jericho-html-3.2-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.htmlparser.jericho/jericho-html/3.2/b8385d9836562d75df8445db00c7e9c50459af9f/jericho-html-3.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/33987872a811fe4d4001ed494b07854822257f42/junit-4.13.2-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/a0a13cfc629420efb587d954f982c4c6a100da25/hamcrest-2.2-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant/1.10.12/3efd45223b70acda49fad3c0983ad2a1468f7628/ant-1.10.12-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant/1.10.12/be08c4f63e92e03bac761404cf77bc270928b6c5/ant-1.10.12.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.mozilla/rhino/1.7.14/138a43e999f235d84b7768235d2cffb00b1b8f7b/rhino-1.7.14-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.mozilla/rhino/1.7.14/24d091b80d513846293c00350f46d85f71797aff/rhino-1.7.14.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant-launcher/1.10.12/d8d34c474280b9dddaa47366c0c891122b2c6861/ant-launcher-1.10.12-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant-launcher/1.10.12/e090b4f9d3ecf45491cc16e759f1e843a1a224c0/ant-launcher-1.10.12.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+</classpath>
