@@ -1,9 +1,10 @@
-**/.settings/org.eclipse.buildship.core.prefs
+# **/.settings/org.eclipse.buildship.core.prefs
 *.swp
 *~
 .DS_Store
-.project
-/*/.classpath
+# Uncomment this line if you wish to ignore the project description file.
+# Typically, this file would be tracked if it contains build/dependency configurations:
+#.project
 /*/bin/
 /.gradle/
 /.vscode/settings.json
