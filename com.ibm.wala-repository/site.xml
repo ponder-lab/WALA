@@ -3,5 +3,5 @@
    <description name="PONDER Lab WALA Update Site" url="https://raw.githubusercontent.com/ponder-lab/WALA/v1.6/com.ibm.wala-repository">
       T.J. Watson Libraries for Analysis
    </description>
-   <feature url="features/com.ibm.wala.ide_feature_1.6.1.202304111632.jar" id="com.ibm.wala.ide_feature" version="1.6.1.202304111632"/>
+   <feature url="features/com.ibm.wala.ide_feature_1.6.1.202304121038.jar" id="com.ibm.wala.ide_feature" version="1.6.1.202304121038"/>
 </site>
