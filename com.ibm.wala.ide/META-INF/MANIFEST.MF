@@ -152,4 +152,7 @@ Export-Package: com.ibm.wala.ide.classloader,
  com.ibm.wala.shrike.sourcepos 
 Automatic-Module-Name: com.ibm.wala.ide
 Bundle-ClassPath: .,
- bin/main/
+ lib/com.ibm.wala.cast-1.6.0.jar,
+ lib/com.ibm.wala.core-1.6.0.jar,
+ lib/com.ibm.wala.shrike-1.6.0.jar,
+ lib/com.ibm.wala.util-1.6.0.jar
