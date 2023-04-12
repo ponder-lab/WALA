@@ -151,4 +151,5 @@ Export-Package: com.ibm.wala.ide.classloader,
  com.ibm.wala.shrike.shrikeCT,
  com.ibm.wala.shrike.sourcepos 
 Automatic-Module-Name: com.ibm.wala.ide
-Bundle-ClassPath: .
+Bundle-ClassPath: .,
+ bin/main/
