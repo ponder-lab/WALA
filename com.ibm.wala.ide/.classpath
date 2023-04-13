@@ -11,6 +11,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.pde/org.eclipse.pde.core/3.14.400/4a651cbddce703978c9533bd84d4be894f8f2503/org.eclipse.pde.core-3.14.400.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.pde/org.eclipse.pde.core/3.14.400/13e67f864ffc842d41b21f59d331c10636ae32a6/org.eclipse.pde.core-3.14.400-sources.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
@@ -460,5 +461,5 @@
 	<classpathentry kind="lib" path="lib/com.ibm.wala.core-1.6.0.jar"/>
 	<classpathentry kind="lib" path="lib/com.ibm.wala.shrike-1.6.0.jar"/>
 	<classpathentry kind="lib" path="lib/com.ibm.wala.util-1.6.0.jar"/>
-	<classpathentry kind="output" path="build/classes"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
