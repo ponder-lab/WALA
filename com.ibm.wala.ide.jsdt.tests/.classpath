@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry output="bin/test" kind="src" path="src/test/java">
 		<attributes>
 			<attribute name="gradle_scope" value="test"/>
@@ -15,6 +14,7 @@
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/"/>
 	<classpathentry kind="src" path="/com.ibm.wala.ide.tests">
 		<attributes>
@@ -502,13 +502,13 @@
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-css/1.17/965b2f20fd7600337897c7a41f8b0ff23e76bd95/batik-css-1.17-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-css/1.17/d5ff4e0463af8a0ea5ab8d782c5418bab2f45c4d/batik-css-1.17.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-css/1.16/d633b17f0def65f6313ed9d656b288d677cfdea6/batik-css-1.16-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-css/1.16/9151bffd3799b8f55fb27b81f06156183ffeb307/batik-css-1.16.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/xmlgraphics-commons/2.9/137a8c8848dad01382e36387042523713b381a2/xmlgraphics-commons-2.9-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/xmlgraphics-commons/2.9/de2d1bd8d40474bbe876bb269410c750489f08e5/xmlgraphics-commons-2.9.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/xmlgraphics-commons/2.7/6939caa367dabb212b02f320a6f5e5660a8f0165/xmlgraphics-commons-2.7-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/xmlgraphics-commons/2.7/336ddd6d0a244cdebf26a298fb7c3a5fd45449db/xmlgraphics-commons-2.7.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
 			<attribute name="test" value="true"/>
@@ -604,13 +604,13 @@
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.14.0/cefe3d258159eb44f4369ff5d8e12602a340bd15/jna-platform-5.14.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.14.0/28934d48aed814f11e4c584da55c49fa7032b31b/jna-platform-5.14.0.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.13.0/e5e195977f4aad007d418a33401c43d1ae929134/jna-platform-5.13.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.13.0/88e9a306715e9379f3122415ef4ae759a352640d/jna-platform-5.13.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.14.0/13bda98796cf4739f5d40cb825578cfaa8463c6e/jna-5.14.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.14.0/67bf3eaea4f0718cb376a181a629e5f88fa1c9dd/jna-5.14.0.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.13.0/e55ddc56d092866b6d59822f825c253960a6e504/jna-5.13.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.13.0/1200e7ebeedbe0d10062093f32925a912020e747/jna-5.13.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
 			<attribute name="test" value="true"/>
@@ -622,25 +622,25 @@
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-util/1.17/6cf6a61c82696d7fbf10a3de24b7b43da9bd7346/batik-util-1.17-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-util/1.17/83ef2a8b449444a1d57e91e938522899317a8672/batik-util-1.17.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-util/1.16/de9a1b9d5f38156d616863ede33beb9c3184b83d/batik-util-1.16-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-util/1.16/cc144a6a69fac333e5ed10ac3169768ceff2b840/batik-util-1.16.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-constants/1.17/b1dc53d92d0f0b79a5f3d908c242ca8db3a623fb/batik-constants-1.17-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-constants/1.17/22bf8b4c207dc46859db0269853186d8dfc8cb9a/batik-constants-1.17.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-constants/1.16/dc0ca3811e80ed88eb80aed7eaedde01ca511896/batik-constants-1.16-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-constants/1.16/924370bb08a8ef1d3983d5ea587a17c7845d9af6/batik-constants-1.16.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-i18n/1.17/b25b770ee03c7f82525ddd61791214466c797bdd/batik-i18n-1.17-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-i18n/1.17/39b233a71430ffa9d0282d47789a58fa8bf4f861/batik-i18n-1.17.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-i18n/1.16/a7f0dfed6a6737af182f18bd8839fa3a62a35bce/batik-i18n-1.16-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-i18n/1.16/6e45a40b5e67f89d528bb511d7d938c161dcbc1f/batik-i18n-1.16.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-shared-resources/1.17/79d95b0917e2bc7d8cd572be7140794aa7b5d78/batik-shared-resources-1.17-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-shared-resources/1.17/2862b81d9dc63990cb5586323b4a2410fc1f2249/batik-shared-resources-1.17.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-shared-resources/1.16/26e22b39af89d9b55164422e7918b0a7947ce91a/batik-shared-resources-1.16-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-shared-resources/1.16/75809160dd805a8ce29b655671cd29e47da43efd/batik-shared-resources-1.16.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
 			<attribute name="test" value="true"/>
