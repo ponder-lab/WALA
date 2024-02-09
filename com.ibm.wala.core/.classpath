@@ -40,7 +40,7 @@
 			<attribute name="gradle_used_by_scope" value="testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" output="build/classes/java/testSubjects" path="src/testSubjects/java">
+	<classpathentry kind="src" output="bin/testSubjects" path="src/testSubjects/java">
 		<attributes>
 			<attribute name="ignore_optional_problems" value="true"/>
 			<attribute name="test" value="true"/>
