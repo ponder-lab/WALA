@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="bin/main" path="src/main/java">
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
 		<attributes>
 			<attribute name="gradle_scope" value="main"/>
 			<attribute name="gradle_used_by_scope" value="main"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/"/>
 	<classpathentry kind="src" path="/com.ibm.wala.cast.java.ecj">
 		<attributes>
 			<attribute name="without_test_code" value="false"/>
@@ -46,317 +43,317 @@
 			<attribute name="without_test_code" value="false"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.pde/org.eclipse.pde.core/3.14.400/4a651cbddce703978c9533bd84d4be894f8f2503/org.eclipse.pde.core-3.14.400.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.pde/org.eclipse.pde.core/3.14.400/13e67f864ffc842d41b21f59d331c10636ae32a6/org.eclipse.pde.core-3.14.400-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.pde/org.eclipse.pde.core/3.14.400/13e67f864ffc842d41b21f59d331c10636ae32a6/org.eclipse.pde.core-3.14.400-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.pde/org.eclipse.pde.core/3.14.400/4a651cbddce703978c9533bd84d4be894f8f2503/org.eclipse.pde.core-3.14.400.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.launching/3.19.300/3cf5cfa08d70aa4435e9d2e08cbf78e7cb1c6fb3/org.eclipse.jdt.launching-3.19.300.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.launching/3.19.300/1e696fd82b3c36aa4cf189a5cda20492b64f2288/org.eclipse.jdt.launching-3.19.300-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.launching/3.19.300/1e696fd82b3c36aa4cf189a5cda20492b64f2288/org.eclipse.jdt.launching-3.19.300-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.launching/3.19.300/3cf5cfa08d70aa4435e9d2e08cbf78e7cb1c6fb3/org.eclipse.jdt.launching-3.19.300.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.debug/3.18.0/9f56b062dd7c68ed89ece601285f1c577fe94643/org.eclipse.jdt.debug-3.18.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.debug/3.18.0/41f4c7dc4bf5636a10295ee7f73766458040aaf7/org.eclipse.jdt.debug-3.18.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.debug/3.18.0/41f4c7dc4bf5636a10295ee7f73766458040aaf7/org.eclipse.jdt.debug-3.18.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.debug/3.18.0/9f56b062dd7c68ed89ece601285f1c577fe94643/org.eclipse.jdt.debug-3.18.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.core/3.27.0/47ec41ecd91feb55b09dc1786d2063c0b16c263a/org.eclipse.jdt.core-3.27.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.core/3.27.0/270a57b2e4b2ce378786b7cd44416b5220f2cbd7/org.eclipse.jdt.core-3.27.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.core/3.27.0/270a57b2e4b2ce378786b7cd44416b5220f2cbd7/org.eclipse.jdt.core-3.27.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.core/3.27.0/47ec41ecd91feb55b09dc1786d2063c0b16c263a/org.eclipse.jdt.core-3.27.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.team.core/3.9.100/124ae8f277d1da0b87db35d25ff9601e1eb3fa6c/org.eclipse.team.core-3.9.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.team.core/3.9.100/5ef392f4df027d32d72bf694d38f954250ae207a/org.eclipse.team.core-3.9.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.team.core/3.9.100/5ef392f4df027d32d72bf694d38f954250ae207a/org.eclipse.team.core-3.9.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.team.core/3.9.100/124ae8f277d1da0b87db35d25ff9601e1eb3fa6c/org.eclipse.team.core-3.9.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.debug.core/3.18.200/b9732220d18f04f9a27328c261300ae5c1fde1bd/org.eclipse.debug.core-3.18.200.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.debug.core/3.18.200/48f7c62e55c2d6935df0681935fec375f118ceea/org.eclipse.debug.core-3.18.200-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.debug.core/3.18.200/48f7c62e55c2d6935df0681935fec375f118ceea/org.eclipse.debug.core-3.18.200-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.debug.core/3.18.200/b9732220d18f04f9a27328c261300ae5c1fde1bd/org.eclipse.debug.core-3.18.200.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.resources/3.15.100/c12bdc6d0fc3c949f57b3831d96adf7a5941cb4f/org.eclipse.core.resources-3.15.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.resources/3.15.100/c6c9746f5334d4a752522631df388bd84cfb4a18/org.eclipse.core.resources-3.15.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.resources/3.15.100/c6c9746f5334d4a752522631df388bd84cfb4a18/org.eclipse.core.resources-3.15.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.resources/3.15.100/c12bdc6d0fc3c949f57b3831d96adf7a5941cb4f/org.eclipse.core.resources-3.15.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.ui.workbench/3.123.0/9196859c6ec2483156fa0b42bf0a5d50de7209d/org.eclipse.ui.workbench-3.123.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.ui.workbench/3.123.0/60393f0f28b9d7b57f2d74c7794ec94aaa15938f/org.eclipse.ui.workbench-3.123.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.ui.workbench/3.123.0/60393f0f28b9d7b57f2d74c7794ec94aaa15938f/org.eclipse.ui.workbench-3.123.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.ui.workbench/3.123.0/9196859c6ec2483156fa0b42bf0a5d50de7209d/org.eclipse.ui.workbench-3.123.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.help/3.9.100/d37dc66b9a7b86a3df43d42dfac13e7a8ec1661d/org.eclipse.help-3.9.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.help/3.9.100/711b42a0b8420bf98ff4e75527098f289f0e386/org.eclipse.help-3.9.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.help/3.9.100/711b42a0b8420bf98ff4e75527098f289f0e386/org.eclipse.help-3.9.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.help/3.9.100/d37dc66b9a7b86a3df43d42dfac13e7a8ec1661d/org.eclipse.help-3.9.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench.addons.swt/1.4.300/ed2547f0c7cb31568d1cf91a320fc53a415e753b/org.eclipse.e4.ui.workbench.addons.swt-1.4.300.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench.addons.swt/1.4.300/bbaa5fd96aa44d3f90287edb064fecaf95e0e1a2/org.eclipse.e4.ui.workbench.addons.swt-1.4.300-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench.addons.swt/1.4.300/bbaa5fd96aa44d3f90287edb064fecaf95e0e1a2/org.eclipse.e4.ui.workbench.addons.swt-1.4.300-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench.addons.swt/1.4.300/ed2547f0c7cb31568d1cf91a320fc53a415e753b/org.eclipse.e4.ui.workbench.addons.swt-1.4.300.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench.renderers.swt/0.15.200/27b08d5d944e71995293b5cfb5b598934879643e/org.eclipse.e4.ui.workbench.renderers.swt-0.15.200.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench.renderers.swt/0.15.200/a3542d447b63053d3410cec56c8cf782bdc1a9b0/org.eclipse.e4.ui.workbench.renderers.swt-0.15.200-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench.renderers.swt/0.15.200/a3542d447b63053d3410cec56c8cf782bdc1a9b0/org.eclipse.e4.ui.workbench.renderers.swt-0.15.200-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench.renderers.swt/0.15.200/27b08d5d944e71995293b5cfb5b598934879643e/org.eclipse.e4.ui.workbench.renderers.swt-0.15.200.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench.swt/0.16.200/9629c60e138743fe6e865834421d2d76a66aaffe/org.eclipse.e4.ui.workbench.swt-0.16.200.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench.swt/0.16.200/363c3e94a52ab1a830be46ac8108c81167396f5b/org.eclipse.e4.ui.workbench.swt-0.16.200-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench.swt/0.16.200/363c3e94a52ab1a830be46ac8108c81167396f5b/org.eclipse.e4.ui.workbench.swt-0.16.200-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench.swt/0.16.200/9629c60e138743fe6e865834421d2d76a66aaffe/org.eclipse.e4.ui.workbench.swt-0.16.200.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench/1.13.0/d7a81c68905a1d1fbce5b3aaa1346799796bc4f/org.eclipse.e4.ui.workbench-1.13.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench/1.13.0/342fb43b607b7b457a4c9c2ef6725f0f8768110d/org.eclipse.e4.ui.workbench-1.13.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench/1.13.0/342fb43b607b7b457a4c9c2ef6725f0f8768110d/org.eclipse.e4.ui.workbench-1.13.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench/1.13.0/d7a81c68905a1d1fbce5b3aaa1346799796bc4f/org.eclipse.e4.ui.workbench-1.13.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.expressions/3.8.0/4f4fa5f162ec0278974aa26e65b8330b35180a02/org.eclipse.core.expressions-3.8.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.expressions/3.8.0/a7450ae9e5531598019dde7fdedf2556b72ffcbd/org.eclipse.core.expressions-3.8.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.expressions/3.8.0/a7450ae9e5531598019dde7fdedf2556b72ffcbd/org.eclipse.core.expressions-3.8.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.expressions/3.8.0/4f4fa5f162ec0278974aa26e65b8330b35180a02/org.eclipse.core.expressions-3.8.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.filebuffers/3.7.0/a1dcad03182574018b6008ec9274025b206192a4/org.eclipse.core.filebuffers-3.7.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.filebuffers/3.7.0/fa2b92ab3b276fce17a5219750cca2fefa1eb57d/org.eclipse.core.filebuffers-3.7.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.filebuffers/3.7.0/fa2b92ab3b276fce17a5219750cca2fefa1eb57d/org.eclipse.core.filebuffers-3.7.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.filebuffers/3.7.0/a1dcad03182574018b6008ec9274025b206192a4/org.eclipse.core.filebuffers-3.7.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.text/3.12.0/60de5d41bf523973a1ce67ed8f16f43891ef5d33/org.eclipse.text-3.12.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.text/3.12.0/7911732154e2f9b7eca89f675ac60a13f4b59991/org.eclipse.text-3.12.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.text/3.12.0/7911732154e2f9b7eca89f675ac60a13f4b59991/org.eclipse.text-3.12.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.text/3.12.0/60de5d41bf523973a1ce67ed8f16f43891ef5d33/org.eclipse.text-3.12.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.model.workbench/2.2.0/6b103c7d003f384db53bb5c49149b299afb3f740/org.eclipse.e4.ui.model.workbench-2.2.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.model.workbench/2.2.0/484d95897985c95fdca5a947ea9d55efeb818240/org.eclipse.e4.ui.model.workbench-2.2.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.model.workbench/2.2.0/484d95897985c95fdca5a947ea9d55efeb818240/org.eclipse.e4.ui.model.workbench-2.2.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.model.workbench/2.2.0/6b103c7d003f384db53bb5c49149b299afb3f740/org.eclipse.e4.ui.model.workbench-2.2.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.css.swt.theme/0.13.0/6be5d652da749e180b6c2ffa4407b1e087b42280/org.eclipse.e4.ui.css.swt.theme-0.13.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.css.swt.theme/0.13.0/fc5458dfab2871f132cffac8fa62b2db58c91980/org.eclipse.e4.ui.css.swt.theme-0.13.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.css.swt.theme/0.13.0/fc5458dfab2871f132cffac8fa62b2db58c91980/org.eclipse.e4.ui.css.swt.theme-0.13.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.css.swt.theme/0.13.0/6be5d652da749e180b6c2ffa4407b1e087b42280/org.eclipse.e4.ui.css.swt.theme-0.13.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.css.swt/0.14.300/752de2730e18de237bd2289cd9fd857acd975d93/org.eclipse.e4.ui.css.swt-0.14.300.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.css.swt/0.14.300/a6213beffd70c6c89e29859dbc4872eec46e26aa/org.eclipse.e4.ui.css.swt-0.14.300-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.css.swt/0.14.300/a6213beffd70c6c89e29859dbc4872eec46e26aa/org.eclipse.e4.ui.css.swt-0.14.300-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.css.swt/0.14.300/752de2730e18de237bd2289cd9fd857acd975d93/org.eclipse.e4.ui.css.swt-0.14.300.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.css.core/0.13.100/272ea111ea66a707e40bd4cca260641ef972ef6e/org.eclipse.e4.ui.css.core-0.13.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.css.core/0.13.100/10e34c42a98e08363d463165d6bd7f4b58fda117/org.eclipse.e4.ui.css.core-0.13.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.css.core/0.13.100/10e34c42a98e08363d463165d6bd7f4b58fda117/org.eclipse.e4.ui.css.core-0.13.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.css.core/0.13.100/272ea111ea66a707e40bd4cca260641ef972ef6e/org.eclipse.e4.ui.css.core-0.13.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench3/0.16.0/ec420799a36531a6b3e30b94b4753ce5671f1022/org.eclipse.e4.ui.workbench3-0.16.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench3/0.16.0/aaa6c34a10ed9b8dfe1825eae72a963f57fbaa2e/org.eclipse.e4.ui.workbench3-0.16.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench3/0.16.0/aaa6c34a10ed9b8dfe1825eae72a963f57fbaa2e/org.eclipse.e4.ui.workbench3-0.16.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.workbench3/0.16.0/ec420799a36531a6b3e30b94b4753ce5671f1022/org.eclipse.e4.ui.workbench3-0.16.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.dialogs/1.3.0/99aec03c680b388c4642a9bda92904042875c39/org.eclipse.e4.ui.dialogs-1.3.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.dialogs/1.3.0/3439750eb67d5f5376c86c74b401dab177651ae7/org.eclipse.e4.ui.dialogs-1.3.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.dialogs/1.3.0/3439750eb67d5f5376c86c74b401dab177651ae7/org.eclipse.e4.ui.dialogs-1.3.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.dialogs/1.3.0/99aec03c680b388c4642a9bda92904042875c39/org.eclipse.e4.ui.dialogs-1.3.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.urischeme/1.2.0/bdb4c2626355a19466862df2fa1cc835f13ccd87/org.eclipse.urischeme-1.2.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.urischeme/1.2.0/7dc66bf1077f9094dc6a399a0c133529886c7920/org.eclipse.urischeme-1.2.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.urischeme/1.2.0/7dc66bf1077f9094dc6a399a0c133529886c7920/org.eclipse.urischeme-1.2.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.urischeme/1.2.0/bdb4c2626355a19466862df2fa1cc835f13ccd87/org.eclipse.urischeme-1.2.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.emf.xpath/0.3.0/e603d7ebad7ae2b89e7baa1385f2df42d126cc3e/org.eclipse.e4.emf.xpath-0.3.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.emf.xpath/0.3.0/93900a4c3159a6e1da62a6b2b8a9b986804f5548/org.eclipse.e4.emf.xpath-0.3.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.emf.xpath/0.3.0/93900a4c3159a6e1da62a6b2b8a9b986804f5548/org.eclipse.e4.emf.xpath-0.3.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.emf.xpath/0.3.0/e603d7ebad7ae2b89e7baa1385f2df42d126cc3e/org.eclipse.e4.emf.xpath-0.3.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.pde/org.eclipse.pde.build/3.11.0/5f3d35d017e182f0cb58e1e60c162e498a69bb7/org.eclipse.pde.build-3.11.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.pde/org.eclipse.pde.build/3.11.0/2505303fdba475b3ed9b549676401513c7f97119/org.eclipse.pde.build-3.11.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.pde/org.eclipse.pde.build/3.11.0/2505303fdba475b3ed9b549676401513c7f97119/org.eclipse.pde.build-3.11.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.pde/org.eclipse.pde.build/3.11.0/5f3d35d017e182f0cb58e1e60c162e498a69bb7/org.eclipse.pde.build-3.11.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.ant.core/3.6.100/c1c4a2d44a7f32d5fec16723bfd81195752c4b82/org.eclipse.ant.core-3.6.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.ant.core/3.6.100/c730651c62047ea8d7400bfc9e6fa704a340487/org.eclipse.ant.core-3.6.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.ant.core/3.6.100/c730651c62047ea8d7400bfc9e6fa704a340487/org.eclipse.ant.core-3.6.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.ant.core/3.6.100/c1c4a2d44a7f32d5fec16723bfd81195752c4b82/org.eclipse.ant.core-3.6.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.variables/3.5.100/eb00504b6dc980a13929bc770f0ec4958592376a/org.eclipse.core.variables-3.5.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.variables/3.5.100/ee91f35a2ec3b4b16b606221cf7ccbbcc6960f57/org.eclipse.core.variables-3.5.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.variables/3.5.100/ee91f35a2ec3b4b16b606221cf7ccbbcc6960f57/org.eclipse.core.variables-3.5.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.variables/3.5.100/eb00504b6dc980a13929bc770f0ec4958592376a/org.eclipse.core.variables-3.5.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.compare.core/3.6.1000/cd3f99a7c77af5b7c788e0083ff2dad05d338646/org.eclipse.compare.core-3.6.1000.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.compare.core/3.6.1000/371afd8ae00b4028d07468b0a6441028bcbe5e37/org.eclipse.compare.core-3.6.1000-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.compare.core/3.6.1000/371afd8ae00b4028d07468b0a6441028bcbe5e37/org.eclipse.compare.core-3.6.1000-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.compare.core/3.6.1000/cd3f99a7c77af5b7c788e0083ff2dad05d338646/org.eclipse.compare.core-3.6.1000.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.runtime/3.23.0/bbcf177e6f155cbd0a0d5cb20a6c8c4d205e9016/org.eclipse.core.runtime-3.23.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.runtime/3.23.0/d37fc620d9cd4f3c6a4bef35bdd1871e5b82df72/org.eclipse.core.runtime-3.23.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.runtime/3.23.0/d37fc620d9cd4f3c6a4bef35bdd1871e5b82df72/org.eclipse.core.runtime-3.23.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.runtime/3.23.0/bbcf177e6f155cbd0a0d5cb20a6c8c4d205e9016/org.eclipse.core.runtime-3.23.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.bindings/0.13.100/ffbe71021f82ec8e3541fa035813e518d77f3752/org.eclipse.e4.ui.bindings-0.13.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.bindings/0.13.100/42a2c79cb27fede8d14598fb841242f0c8c25854/org.eclipse.e4.ui.bindings-0.13.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.bindings/0.13.100/42a2c79cb27fede8d14598fb841242f0c8c25854/org.eclipse.e4.ui.bindings-0.13.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.bindings/0.13.100/ffbe71021f82ec8e3541fa035813e518d77f3752/org.eclipse.e4.ui.bindings-0.13.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.services/1.5.0/7eebc95d0083d56de890c418183b5fc56dc94318/org.eclipse.e4.ui.services-1.5.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.services/1.5.0/b21a7e05e2316d5ac5e4eb7d75ffc61120cc48f9/org.eclipse.e4.ui.services-1.5.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.services/1.5.0/b21a7e05e2316d5ac5e4eb7d75ffc61120cc48f9/org.eclipse.e4.ui.services-1.5.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.services/1.5.0/7eebc95d0083d56de890c418183b5fc56dc94318/org.eclipse.e4.ui.services-1.5.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.services/2.3.0/38dea2603631f9c35a41820e4e38b0081e70616/org.eclipse.e4.core.services-2.3.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.services/2.3.0/a29632770ac953a1cfadd7e3a1f3a9ca0491812d/org.eclipse.e4.core.services-2.3.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.services/2.3.0/a29632770ac953a1cfadd7e3a1f3a9ca0491812d/org.eclipse.e4.core.services-2.3.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.services/2.3.0/38dea2603631f9c35a41820e4e38b0081e70616/org.eclipse.e4.core.services-2.3.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.garbagecollector/1.2.0/a32106eb128a486a8737415d739edd149f376ced/org.eclipse.equinox.p2.garbagecollector-1.2.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.garbagecollector/1.2.0/ea036fef122e2e004fb07e7ece5b1651d0cbd33c/org.eclipse.equinox.p2.garbagecollector-1.2.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.garbagecollector/1.2.0/ea036fef122e2e004fb07e7ece5b1651d0cbd33c/org.eclipse.equinox.p2.garbagecollector-1.2.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.garbagecollector/1.2.0/a32106eb128a486a8737415d739edd149f376ced/org.eclipse.equinox.p2.garbagecollector-1.2.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.engine/2.7.100/212a0e6f19c6ac7ded6b75d27856466431c1b8ea/org.eclipse.equinox.p2.engine-2.7.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.engine/2.7.100/109ad42bb9a50eb91f17b173f332a3e7ed4f786e/org.eclipse.equinox.p2.engine-2.7.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.engine/2.7.100/109ad42bb9a50eb91f17b173f332a3e7ed4f786e/org.eclipse.equinox.p2.engine-2.7.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.engine/2.7.100/212a0e6f19c6ac7ded6b75d27856466431c1b8ea/org.eclipse.equinox.p2.engine-2.7.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.director/2.5.100/b176996799e770dcdf88f00ab7b72cbbc3651cd3/org.eclipse.equinox.p2.director-2.5.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.director/2.5.100/6591cbfa89b2102707ac454d3494c6b1908e4b4a/org.eclipse.equinox.p2.director-2.5.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.director/2.5.100/6591cbfa89b2102707ac454d3494c6b1908e4b4a/org.eclipse.equinox.p2.director-2.5.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.director/2.5.100/b176996799e770dcdf88f00ab7b72cbbc3651cd3/org.eclipse.equinox.p2.director-2.5.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.jobs/3.12.0/fbdf1665adc00e8ed849a2635e882f672545f666/org.eclipse.core.jobs-3.12.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.jobs/3.12.0/dab0767d2b396396bc175eebac0b3abdfb2ba27a/org.eclipse.core.jobs-3.12.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.jobs/3.12.0/dab0767d2b396396bc175eebac0b3abdfb2ba27a/org.eclipse.core.jobs-3.12.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.jobs/3.12.0/fbdf1665adc00e8ed849a2635e882f672545f666/org.eclipse.core.jobs-3.12.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.app/1.6.0/c827d7d114ca614607b63ee885ef3e82bf31be1f/org.eclipse.equinox.app-1.6.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.app/1.6.0/3ecce3091fd9b5c1153439269d440934ed439df5/org.eclipse.equinox.app-1.6.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.app/1.6.0/3ecce3091fd9b5c1153439269d440934ed439df5/org.eclipse.equinox.app-1.6.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.app/1.6.0/c827d7d114ca614607b63ee885ef3e82bf31be1f/org.eclipse.equinox.app-1.6.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.jface.databinding/1.13.0/e36d9c4ce8b4aa34af799b4e974a90ef4d9c348e/org.eclipse.jface.databinding-1.13.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.jface.databinding/1.13.0/480d2e15bbd83d2fad115d3575a3721dcb3addab/org.eclipse.jface.databinding-1.13.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.jface.databinding/1.13.0/480d2e15bbd83d2fad115d3575a3721dcb3addab/org.eclipse.jface.databinding-1.13.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.jface.databinding/1.13.0/e36d9c4ce8b4aa34af799b4e974a90ef4d9c348e/org.eclipse.jface.databinding-1.13.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.jface/3.23.0/a68981b2c9df9c5f90c1f5022a5e15a3d8d70368/org.eclipse.jface-3.23.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.jface/3.23.0/4d5c2f9ef2921d61fd4baee766b2f20d45b345a/org.eclipse.jface-3.23.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.jface/3.23.0/4d5c2f9ef2921d61fd4baee766b2f20d45b345a/org.eclipse.jface-3.23.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.jface/3.23.0/a68981b2c9df9c5f90c1f5022a5e15a3d8d70368/org.eclipse.jface-3.23.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.filesystem/1.9.100/fd21cf348d85c5c47a9c070ea43802b1cb099737/org.eclipse.core.filesystem-1.9.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.filesystem/1.9.100/91264124c568c53cf034b75d383245aaaf520e42/org.eclipse.core.filesystem-1.9.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.filesystem/1.9.100/91264124c568c53cf034b75d383245aaaf520e42/org.eclipse.core.filesystem-1.9.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.filesystem/1.9.100/fd21cf348d85c5c47a9c070ea43802b1cb099737/org.eclipse.core.filesystem-1.9.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.contenttype/3.8.0/a5da17bfe08fc4a32b9dba483d26cefe162a199a/org.eclipse.core.contenttype-3.8.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.contenttype/3.8.0/52598953e1ee6e469043f6c94ae02a22e1f6f8f5/org.eclipse.core.contenttype-3.8.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.contenttype/3.8.0/52598953e1ee6e469043f6c94ae02a22e1f6f8f5/org.eclipse.core.contenttype-3.8.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.contenttype/3.8.0/a5da17bfe08fc4a32b9dba483d26cefe162a199a/org.eclipse.core.contenttype-3.8.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.repository/2.5.200/b3df7c7154004240953257fb30a5f983cb71bc8e/org.eclipse.equinox.p2.repository-2.5.200.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.repository/2.5.200/3fb1304f2120970275cf30c573e8486489460b85/org.eclipse.equinox.p2.repository-2.5.200-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.repository/2.5.200/3fb1304f2120970275cf30c573e8486489460b85/org.eclipse.equinox.p2.repository-2.5.200-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.repository/2.5.200/b3df7c7154004240953257fb30a5f983cb71bc8e/org.eclipse.equinox.p2.repository-2.5.200.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.repository.tools/2.3.0/12dcbf088e0ac79677dd638ddb9ec50368597e4c/org.eclipse.equinox.p2.repository.tools-2.3.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.repository.tools/2.3.0/f67ae78336446c24d1ca0c788fbb3b9c99df649/org.eclipse.equinox.p2.repository.tools-2.3.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.repository.tools/2.3.0/f67ae78336446c24d1ca0c788fbb3b9c99df649/org.eclipse.equinox.p2.repository.tools-2.3.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.repository.tools/2.3.0/12dcbf088e0ac79677dd638ddb9ec50368597e4c/org.eclipse.equinox.p2.repository.tools-2.3.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.registry/3.11.0/60a8d1f8965f9bc22c3b14b3ab7d892fe54a0a93/org.eclipse.equinox.registry-3.11.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.registry/3.11.0/3a72ea89c659989ecaef231cb82072e48e5e405/org.eclipse.equinox.registry-3.11.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.registry/3.11.0/3a72ea89c659989ecaef231cb82072e48e5e405/org.eclipse.equinox.registry-3.11.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.registry/3.11.0/60a8d1f8965f9bc22c3b14b3ab7d892fe54a0a93/org.eclipse.equinox.registry-3.11.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.preferences/3.9.0/8c60769f83c69214db9b3991be899de07963e767/org.eclipse.equinox.preferences-3.9.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.preferences/3.9.0/599302cb7eb4d49cc397281cef903a458310a974/org.eclipse.equinox.preferences-3.9.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.preferences/3.9.0/599302cb7eb4d49cc397281cef903a458310a974/org.eclipse.equinox.preferences-3.9.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.preferences/3.9.0/8c60769f83c69214db9b3991be899de07963e767/org.eclipse.equinox.preferences-3.9.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.commands/3.10.100/e6ab3335ea6918b4d73ee1b78a302248eaed4670/org.eclipse.core.commands-3.10.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.commands/3.10.100/95a377af33cbf14a8649607c6194ef974272bdfc/org.eclipse.core.commands-3.10.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.commands/3.10.100/95a377af33cbf14a8649607c6194ef974272bdfc/org.eclipse.core.commands-3.10.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.commands/3.10.100/e6ab3335ea6918b4d73ee1b78a302248eaed4670/org.eclipse.core.commands-3.10.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.databinding/1.10.100/c38f215cc207771d3f180cb08ac32b3c7b93c4f8/org.eclipse.core.databinding-1.10.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.databinding/1.10.100/4e014f038fc3b1caaf7aa3d88438107596c71fad/org.eclipse.core.databinding-1.10.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.databinding/1.10.100/4e014f038fc3b1caaf7aa3d88438107596c71fad/org.eclipse.core.databinding-1.10.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.databinding/1.10.100/c38f215cc207771d3f180cb08ac32b3c7b93c4f8/org.eclipse.core.databinding-1.10.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.databinding.property/1.9.0/831e5c27a79a2ed2e263298dabf4e885677c1ce4/org.eclipse.core.databinding.property-1.9.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.databinding.property/1.9.0/54ef8963d2cbae2fd22489ee4b823ba98a7a50d4/org.eclipse.core.databinding.property-1.9.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.databinding.property/1.9.0/54ef8963d2cbae2fd22489ee4b823ba98a7a50d4/org.eclipse.core.databinding.property-1.9.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.databinding.property/1.9.0/831e5c27a79a2ed2e263298dabf4e885677c1ce4/org.eclipse.core.databinding.property-1.9.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.databinding.observable/1.11.0/37d2d6b39387844b53e5d92f7912ca7f710b221b/org.eclipse.core.databinding.observable-1.11.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.databinding.observable/1.11.0/3c83806ce74a2dc0a343b20b467efe42446748f7/org.eclipse.core.databinding.observable-1.11.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.databinding.observable/1.11.0/3c83806ce74a2dc0a343b20b467efe42446748f7/org.eclipse.core.databinding.observable-1.11.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.core.databinding.observable/1.11.0/37d2d6b39387844b53e5d92f7912ca7f710b221b/org.eclipse.core.databinding.observable-1.11.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.commands/1.0.0/9a3256311671498a02adf9eedded56248ca4e0a9/org.eclipse.e4.core.commands-1.0.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.commands/1.0.0/254d3a15301909b6a74121d285630a056b5ba86a/org.eclipse.e4.core.commands-1.0.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.commands/1.0.0/254d3a15301909b6a74121d285630a056b5ba86a/org.eclipse.e4.core.commands-1.0.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.commands/1.0.0/9a3256311671498a02adf9eedded56248ca4e0a9/org.eclipse.e4.core.commands-1.0.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.simpleconfigurator.manipulator/2.2.0/62d06f51064223682e4180bfc940ea928f0d0fed/org.eclipse.equinox.simpleconfigurator.manipulator-2.2.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.simpleconfigurator.manipulator/2.2.0/99b79b0989eea5fab878e9558fc21c3d60ac89fa/org.eclipse.equinox.simpleconfigurator.manipulator-2.2.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.simpleconfigurator.manipulator/2.2.0/99b79b0989eea5fab878e9558fc21c3d60ac89fa/org.eclipse.equinox.simpleconfigurator.manipulator-2.2.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.simpleconfigurator.manipulator/2.2.0/62d06f51064223682e4180bfc940ea928f0d0fed/org.eclipse.equinox.simpleconfigurator.manipulator-2.2.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.frameworkadmin/2.2.0/d1d6e4dbf56ed60960d7687bb31d4c53b77af3e6/org.eclipse.equinox.frameworkadmin-2.2.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.frameworkadmin/2.2.0/6d82c5121d30e41f02d0a132052298ea509f5282/org.eclipse.equinox.frameworkadmin-2.2.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.frameworkadmin/2.2.0/6d82c5121d30e41f02d0a132052298ea509f5282/org.eclipse.equinox.frameworkadmin-2.2.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.frameworkadmin/2.2.0/d1d6e4dbf56ed60960d7687bb31d4c53b77af3e6/org.eclipse.equinox.frameworkadmin-2.2.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.metadata/2.6.100/326b0b6c04f6585cdcf064f0eac62b456d406c77/org.eclipse.equinox.p2.metadata-2.6.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.metadata/2.6.100/d26cafb6db14db3ca723cfc13c683c6743679929/org.eclipse.equinox.p2.metadata-2.6.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.metadata/2.6.100/d26cafb6db14db3ca723cfc13c683c6743679929/org.eclipse.equinox.p2.metadata-2.6.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.metadata/2.6.100/326b0b6c04f6585cdcf064f0eac62b456d406c77/org.eclipse.equinox.p2.metadata-2.6.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.core/2.8.0/6f1c1bc4b00ea1ab44c8d8f7148138e85ea47ba2/org.eclipse.equinox.p2.core-2.8.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.core/2.8.0/4ba3ab2d2fb4f3f3ac4b2ace6cefd44d564957b6/org.eclipse.equinox.p2.core-2.8.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.core/2.8.0/4ba3ab2d2fb4f3f3ac4b2ace6cefd44d564957b6/org.eclipse.equinox.p2.core-2.8.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.core/2.8.0/6f1c1bc4b00ea1ab44c8d8f7148138e85ea47ba2/org.eclipse.equinox.p2.core-2.8.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.touchpoint.eclipse/2.3.100/c48d0c46dd912d34c82c04caee138f10f2eb8ddf/org.eclipse.equinox.p2.touchpoint.eclipse-2.3.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.touchpoint.eclipse/2.3.100/59334c0dba04d01356f0632cc4a024a852557d16/org.eclipse.equinox.p2.touchpoint.eclipse-2.3.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.touchpoint.eclipse/2.3.100/59334c0dba04d01356f0632cc4a024a852557d16/org.eclipse.equinox.p2.touchpoint.eclipse-2.3.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.touchpoint.eclipse/2.3.100/c48d0c46dd912d34c82c04caee138f10f2eb8ddf/org.eclipse.equinox.p2.touchpoint.eclipse-2.3.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.jarprocessor/1.2.0/40e40c5af7dbb6360125ad30497556e158a2d283/org.eclipse.equinox.p2.jarprocessor-1.2.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.jarprocessor/1.2.0/a0de4af8369ebe2318f879c9e340c7f01eb703e7/org.eclipse.equinox.p2.jarprocessor-1.2.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.jarprocessor/1.2.0/a0de4af8369ebe2318f879c9e340c7f01eb703e7/org.eclipse.equinox.p2.jarprocessor-1.2.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.jarprocessor/1.2.0/40e40c5af7dbb6360125ad30497556e158a2d283/org.eclipse.equinox.p2.jarprocessor-1.2.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.publisher/1.6.100/fb641145652551579dcdb4bec47de37574df5851/org.eclipse.equinox.p2.publisher-1.6.100.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.publisher/1.6.100/bcb8f97100436cab5d3f29b8f90444c1696b69ea/org.eclipse.equinox.p2.publisher-1.6.100-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.publisher/1.6.100/bcb8f97100436cab5d3f29b8f90444c1696b69ea/org.eclipse.equinox.p2.publisher-1.6.100-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.publisher/1.6.100/fb641145652551579dcdb4bec47de37574df5851/org.eclipse.equinox.p2.publisher-1.6.100.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.director.app/1.2.0/5c2f893152ecf7c7b55338def94dc3f48fef4159/org.eclipse.equinox.p2.director.app-1.2.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.director.app/1.2.0/350732135e5960e4ef0f7deb58a1cf2274a29ff4/org.eclipse.equinox.p2.director.app-1.2.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.director.app/1.2.0/350732135e5960e4ef0f7deb58a1cf2274a29ff4/org.eclipse.equinox.p2.director.app-1.2.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.director.app/1.2.0/5c2f893152ecf7c7b55338def94dc3f48fef4159/org.eclipse.equinox.p2.director.app-1.2.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.publisher.eclipse/1.4.1/2e83dc364306b7852a40d1c6b722c7d4f8c39129/org.eclipse.equinox.p2.publisher.eclipse-1.4.1.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.publisher.eclipse/1.4.1/3694e7b84cc47899713afd189b801da0226801ca/org.eclipse.equinox.p2.publisher.eclipse-1.4.1-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.publisher.eclipse/1.4.1/3694e7b84cc47899713afd189b801da0226801ca/org.eclipse.equinox.p2.publisher.eclipse-1.4.1-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.p2.publisher.eclipse/1.4.1/2e83dc364306b7852a40d1c6b722c7d4f8c39129/org.eclipse.equinox.p2.publisher.eclipse-1.4.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.common/3.15.0/bd08027a06f7c62fa281cacd887daa2f590f20d0/org.eclipse.equinox.common-3.15.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.common/3.15.0/6dc2e2b7c22c4d9ceb38fb6cd7a6738a66f20c05/org.eclipse.equinox.common-3.15.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.common/3.15.0/6dc2e2b7c22c4d9ceb38fb6cd7a6738a66f20c05/org.eclipse.equinox.common-3.15.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.equinox.common/3.15.0/bd08027a06f7c62fa281cacd887daa2f590f20d0/org.eclipse.equinox.common-3.15.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.osgi/3.17.0/105800392f81e4ef784894197dea6d1c27d9dc0/org.eclipse.osgi-3.17.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.osgi/3.17.0/d28a62d96bb36b4210bfd472a40aaad26585ee94/org.eclipse.osgi-3.17.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.osgi/3.17.0/d28a62d96bb36b4210bfd472a40aaad26585ee94/org.eclipse.osgi-3.17.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.osgi/3.17.0/105800392f81e4ef784894197dea6d1c27d9dc0/org.eclipse.osgi-3.17.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.swt.gtk.linux.x86_64/3.117.0/51905a20befe64407f7696080174e7e66f1e29d6/org.eclipse.swt.gtk.linux.x86_64-3.117.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.swt.gtk.linux.x86_64/3.117.0/1426674cf331367535295cea53fcebf356b888a9/org.eclipse.swt.gtk.linux.x86_64-3.117.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.swt.gtk.linux.x86_64/3.117.0/1426674cf331367535295cea53fcebf356b888a9/org.eclipse.swt.gtk.linux.x86_64-3.117.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.swt.gtk.linux.x86_64/3.117.0/51905a20befe64407f7696080174e7e66f1e29d6/org.eclipse.swt.gtk.linux.x86_64-3.117.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.widgets/1.3.0/a0187f1583ac81702ec7d7d8b79d20414bb6c523/org.eclipse.e4.ui.widgets-1.3.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.widgets/1.3.0/b680ebb929d947219af555322dbfdac359775f8/org.eclipse.e4.ui.widgets-1.3.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.widgets/1.3.0/b680ebb929d947219af555322dbfdac359775f8/org.eclipse.e4.ui.widgets-1.3.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.widgets/1.3.0/a0187f1583ac81702ec7d7d8b79d20414bb6c523/org.eclipse.e4.ui.widgets-1.3.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
@@ -366,72 +363,102 @@
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.contexts/1.9.0/5eb12255ed95c2ec54bb03f5b5a2c6dc338edad7/org.eclipse.e4.core.contexts-1.9.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.contexts/1.9.0/7423aa36a3ec9d88217dfcb9fe16b079e772b799/org.eclipse.e4.core.contexts-1.9.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.contexts/1.9.0/7423aa36a3ec9d88217dfcb9fe16b079e772b799/org.eclipse.e4.core.contexts-1.9.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.contexts/1.9.0/5eb12255ed95c2ec54bb03f5b5a2c6dc338edad7/org.eclipse.e4.core.contexts-1.9.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.di/1.8.0/268f47b84d260dabb27742530f1a33612675d889/org.eclipse.e4.core.di-1.8.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.di/1.8.0/ba056a96b6c7ade67b80e0a8d7ed02f0b626cab4/org.eclipse.e4.core.di-1.8.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.di/1.8.0/ba056a96b6c7ade67b80e0a8d7ed02f0b626cab4/org.eclipse.e4.core.di-1.8.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.di/1.8.0/268f47b84d260dabb27742530f1a33612675d889/org.eclipse.e4.core.di-1.8.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.di/1.4.0/5b093a375764b7ec90a56bc7d6178dfe12be3083/org.eclipse.e4.ui.di-1.4.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.di/1.4.0/1396ad56eaa00744b78297e2789614625b7cb4b3/org.eclipse.e4.ui.di-1.4.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.di/1.4.0/1396ad56eaa00744b78297e2789614625b7cb4b3/org.eclipse.e4.ui.di-1.4.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.ui.di/1.4.0/5b093a375764b7ec90a56bc7d6178dfe12be3083/org.eclipse.e4.ui.di-1.4.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.16.0/d97e62119430239a787f779b399aa4b3fe11106e/org.eclipse.emf.ecore.xmi-2.16.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.16.0/c9f5f94713b197f738059530200f7e1f29f448f2/org.eclipse.emf.ecore.xmi-2.16.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.16.0/c9f5f94713b197f738059530200f7e1f29f448f2/org.eclipse.emf.ecore.xmi-2.16.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.16.0/d97e62119430239a787f779b399aa4b3fe11106e/org.eclipse.emf.ecore.xmi-2.16.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore.change/2.14.0/919d756fed4322b1dac8ea37e54f186ee8a6d6bd/org.eclipse.emf.ecore.change-2.14.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore.change/2.14.0/b3aaa6854d19586062ddc4230428594dbee20486/org.eclipse.emf.ecore.change-2.14.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore.change/2.14.0/b3aaa6854d19586062ddc4230428594dbee20486/org.eclipse.emf.ecore.change-2.14.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore.change/2.14.0/919d756fed4322b1dac8ea37e54f186ee8a6d6bd/org.eclipse.emf.ecore.change-2.14.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore/2.25.0/9e446c504ea1ef0a168a5213367d3297ec88e61f/org.eclipse.emf.ecore-2.25.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore/2.25.0/a0e3eec36e2fc66324e4777de6fdf6fcf474bda8/org.eclipse.emf.ecore-2.25.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore/2.25.0/a0e3eec36e2fc66324e4777de6fdf6fcf474bda8/org.eclipse.emf.ecore-2.25.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore/2.25.0/9e446c504ea1ef0a168a5213367d3297ec88e61f/org.eclipse.emf.ecore-2.25.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.di.extensions/0.17.0/91b3bcf6e110a45d019ff1fc9bbcf603725143e8/org.eclipse.e4.core.di.extensions-0.17.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.di.extensions/0.17.0/746afcea3a1cc0f6fc506f724fc742ae965016a8/org.eclipse.e4.core.di.extensions-0.17.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.di.extensions/0.17.0/746afcea3a1cc0f6fc506f724fc742ae965016a8/org.eclipse.e4.core.di.extensions-0.17.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.di.extensions/0.17.0/91b3bcf6e110a45d019ff1fc9bbcf603725143e8/org.eclipse.e4.core.di.extensions-0.17.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.di.annotations/1.7.0/1b7e0b3c7507eeb720da0b97c5150655405ea75f/org.eclipse.e4.core.di.annotations-1.7.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.di.annotations/1.7.0/c3f17dd41d15eaeb19250133763bcd97f294983/org.eclipse.e4.core.di.annotations-1.7.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.di.annotations/1.7.0/c3f17dd41d15eaeb19250133763bcd97f294983/org.eclipse.e4.core.di.annotations-1.7.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.platform/org.eclipse.e4.core.di.annotations/1.7.0/1b7e0b3c7507eeb720da0b97c5150655405ea75f/org.eclipse.e4.core.di.annotations-1.7.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/1ad35f11d17abb52426bfe15ea7b4c583795012/jakarta.annotation-api-1.3.5-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/1ad35f11d17abb52426bfe15ea7b4c583795012/jakarta.annotation-api-1.3.5-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.birt.runtime/org.w3c.css.sac/1.3.1.v200903091627/8a9501900c6ed5d6da577bf9e947011319c8e512/org.w3c.css.sac-1.3.1.v200903091627.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.birt.runtime/org.w3c.css.sac/1.3.1.v200903091627/796dae9a139b0873907d583632d830c6683960f3/org.w3c.css.sac-1.3.1.v200903091627-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.birt.runtime/org.w3c.css.sac/1.3.1.v200903091627/796dae9a139b0873907d583632d830c6683960f3/org.w3c.css.sac-1.3.1.v200903091627-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.birt.runtime/org.w3c.css.sac/1.3.1.v200903091627/8a9501900c6ed5d6da577bf9e947011319c8e512/org.w3c.css.sac-1.3.1.v200903091627.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.common/2.23.0/fc7f2bd94b70153b86bf88698fd25c42482f0d09/org.eclipse.emf.common-2.23.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.common/2.23.0/f3948f44aa6f1d3fa653d71964bc5babe18391e9/org.eclipse.emf.common-2.23.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-css/1.17/965b2f20fd7600337897c7a41f8b0ff23e76bd95/batik-css-1.17-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-css/1.17/d5ff4e0463af8a0ea5ab8d782c5418bab2f45c4d/batik-css-1.17.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.13.0/88e9a306715e9379f3122415ef4ae759a352640d/jna-platform-5.13.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.13.0/e5e195977f4aad007d418a33401c43d1ae929134/jna-platform-5.13.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.common/2.23.0/f3948f44aa6f1d3fa653d71964bc5babe18391e9/org.eclipse.emf.common-2.23.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.common/2.23.0/fc7f2bd94b70153b86bf88698fd25c42482f0d09/org.eclipse.emf.common-2.23.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.13.0/1200e7ebeedbe0d10062093f32925a912020e747/jna-5.13.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.13.0/e55ddc56d092866b6d59822f825c253960a6e504/jna-5.13.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.14.0/cefe3d258159eb44f4369ff5d8e12602a340bd15/jna-platform-5.14.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.14.0/28934d48aed814f11e4c584da55c49fa7032b31b/jna-platform-5.14.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-jxpath/commons-jxpath/1.3/c22d7d0f0f40eb7059a23cfa61773a416768b137/commons-jxpath-1.3.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-jxpath/commons-jxpath/1.3/8635d6b633d632d5aad1924fb0dc767b4527689/commons-jxpath-1.3-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.14.0/13bda98796cf4739f5d40cb825578cfaa8463c6e/jna-5.14.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.14.0/67bf3eaea4f0718cb376a181a629e5f88fa1c9dd/jna-5.14.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-jxpath/commons-jxpath/1.3/8635d6b633d632d5aad1924fb0dc767b4527689/commons-jxpath-1.3-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-jxpath/commons-jxpath/1.3/c22d7d0f0f40eb7059a23cfa61773a416768b137/commons-jxpath-1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-util/1.17/6cf6a61c82696d7fbf10a3de24b7b43da9bd7346/batik-util-1.17-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-util/1.17/83ef2a8b449444a1d57e91e938522899317a8672/batik-util-1.17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-constants/1.17/b1dc53d92d0f0b79a5f3d908c242ca8db3a623fb/batik-constants-1.17-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-constants/1.17/22bf8b4c207dc46859db0269853186d8dfc8cb9a/batik-constants-1.17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-i18n/1.17/b25b770ee03c7f82525ddd61791214466c797bdd/batik-i18n-1.17-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-i18n/1.17/39b233a71430ffa9d0282d47789a58fa8bf4f861/batik-i18n-1.17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-shared-resources/1.17/79d95b0917e2bc7d8cd572be7140794aa7b5d78/batik-shared-resources-1.17-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/batik-shared-resources/1.17/2862b81d9dc63990cb5586323b4a2410fc1f2249/batik-shared-resources-1.17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/xmlgraphics-commons/2.9/137a8c8848dad01382e36387042523713b381a2/xmlgraphics-commons-2.9-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.apache.xmlgraphics/xmlgraphics-commons/2.9/de2d1bd8d40474bbe876bb269410c750489f08e5/xmlgraphics-commons-2.9.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
@@ -441,30 +468,29 @@
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.ow2.sat4j/org.ow2.sat4j.pb/2.3.6/b5c6acac9ad833b30c86697577fe191d50c76caa/org.ow2.sat4j.pb-2.3.6.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.ow2.sat4j/org.ow2.sat4j.pb/2.3.6/c5e6d8f6f5981fbc4152af675a0de1ae3c1c8272/org.ow2.sat4j.pb-2.3.6-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.ow2.sat4j/org.ow2.sat4j.pb/2.3.6/c5e6d8f6f5981fbc4152af675a0de1ae3c1c8272/org.ow2.sat4j.pb-2.3.6-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.ow2.sat4j/org.ow2.sat4j.pb/2.3.6/b5c6acac9ad833b30c86697577fe191d50c76caa/org.ow2.sat4j.pb-2.3.6.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.ow2.sat4j/org.ow2.sat4j.core/2.3.6/e29692f97d9d2ce3cddb3fbcc2e9f5d9be6c3c82/org.ow2.sat4j.core-2.3.6.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.ow2.sat4j/org.ow2.sat4j.core/2.3.6/e820dd6100c304e9bb270b5132d6e5607dcd6e7d/org.ow2.sat4j.core-2.3.6-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.ow2.sat4j/org.ow2.sat4j.core/2.3.6/e820dd6100c304e9bb270b5132d6e5607dcd6e7d/org.ow2.sat4j.core-2.3.6-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.ow2.sat4j/org.ow2.sat4j.core/2.3.6/e29692f97d9d2ce3cddb3fbcc2e9f5d9be6c3c82/org.ow2.sat4j.core-2.3.6.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.tukaani/xz/1.9/1ea4bec1a921180164852c65006d928617bd2caf/xz-1.9.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.tukaani/xz/1.9/802ffc2e4237e0c76999e293a97171de020d659f/xz-1.9-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.tukaani/xz/1.9/802ffc2e4237e0c76999e293a97171de020d659f/xz-1.9-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/org.tukaani/xz/1.9/1ea4bec1a921180164852c65006d928617bd2caf/xz-1.9.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.0.4/f029a2aefe2b3e1517573c580f948caac31b1056/commons-logging-1.0.4.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.0.4/8d3424a318e818f88568dfb3b55c58583364ba9/commons-logging-1.0.4-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/2ef0187124bbfc7aed3038d4ffdd2241e8992937/commons-io-2.11.0-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/a2503f302b11ebde7ebc3df41daebe0e4eea3689/commons-io-2.11.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/a2503f302b11ebde7ebc3df41daebe0e4eea3689/commons-io-2.11.0.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/2ef0187124bbfc7aed3038d4ffdd2241e8992937/commons-io-2.11.0-sources.jar">
+	<classpathentry sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.0.4/8d3424a318e818f88568dfb3b55c58583364ba9/commons-logging-1.0.4-sources.jar" kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.0.4/f029a2aefe2b3e1517573c580f948caac31b1056/commons-logging-1.0.4.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test,testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="output" path="bin/default"/>
 </classpath>
