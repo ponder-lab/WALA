@@ -40,7 +40,7 @@
 			<attribute name="gradle_used_by_scope" value="testFixtures"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" output="build/classes/java/testSubjects" path="src/testSubjects/java">
+	<classpathentry kind="src" output="bin/testSubjects" path="src/testSubjects/java">
 		<attributes>
 			<attribute name="ignore_optional_problems" value="true"/>
 			<attribute name="test" value="true"/>
@@ -51,16 +51,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/">
 		<attributes>
 			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="src" path="/com.ibm.wala.shrike">
-		<attributes>
-			<attribute name="without_test_code" value="false"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="src" path="/com.ibm.wala.util">
-		<attributes>
-			<attribute name="without_test_code" value="false"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/rk1424/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar" sourcepath="/home/rk1424/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/33987872a811fe4d4001ed494b07854822257f42/junit-4.13.2-sources.jar">
@@ -99,5 +89,7 @@
 			<attribute name="gradle_used_by_scope" value="test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/com.ibm.wala.shrike"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/com.ibm.wala.util"/>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>
