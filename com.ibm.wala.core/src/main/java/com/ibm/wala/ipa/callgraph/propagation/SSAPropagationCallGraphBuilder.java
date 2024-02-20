@@ -99,7 +99,7 @@ import java.util.function.Consumer;
  */
 public abstract class SSAPropagationCallGraphBuilder extends PropagationCallGraphBuilder
     implements HeapModel {
-  private static final boolean DEBUG = true;
+  private static final boolean DEBUG = false;
 
   private static final boolean DEBUG_MULTINEWARRAY = DEBUG | false;
 
