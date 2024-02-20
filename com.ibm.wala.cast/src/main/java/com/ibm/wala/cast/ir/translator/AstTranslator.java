@@ -670,9 +670,9 @@ public abstract class AstTranslator extends CAstVisitor<AstTranslator.WalkContex
 
   public static final boolean DEBUG_ALL = false;
 
-  public static final boolean DEBUG_TOP = DEBUG_ALL || true;
+  public static final boolean DEBUG_TOP = DEBUG_ALL || false;
 
-  public static final boolean DEBUG_CFG = DEBUG_ALL || true;
+  public static final boolean DEBUG_CFG = DEBUG_ALL || false;
 
   public static final boolean DEBUG_NAMES = DEBUG_ALL || false;
 
